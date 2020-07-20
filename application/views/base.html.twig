@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Cabinet Office - Government of Ontario | Gouvernement de l’Ontario</title>
+        {% block stylesheets %}
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="{{ base_url('/assets/css/style.css') }}" rel="stylesheet" type="text/css">
+        {% endblock %}
+        
+        <link rel="icon" type="image/x-icon" href="{{ base_url('/assets/favicon.ico') }}" />
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            {% block header %}
+                <header class="header">
+                    <div class="row topnav">
+                        <div class="col-3 iconWrapperLongNoBg iconLogoHeader">
+                            <img class="site-logo" alt="Government of Ontario | Gouvernement de l’Ontario" src="{{ base_url('/assets/img/logo-ontario@2x.png') }}" />
+                        </div>
+                        <div class="col-6">
+                            <div class="search-container">
+                                <form action="/action_page.php">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="top3col-wrap">
+                                <!-- francais link for large screens -->
+                                <a href="https://www.ontario.ca/fr/page/gouvernement" class="header-link-lang" lang="fr" hreflang="fr" rel="alternate" analytics-on="" analytics-category="Header" analytics-event="Cabinet Office" analytics-label="français" target="_blank">
+                                    français
+                                </a>
+                                <!-- menu for all screens -->
+                                <div class="dropdown dropleft float-right">
+                                    <button type="button" class="btn btn-info fa fa-bars" data-toggle="dropdown">
+                                        <span>MENU</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="/">Home</a>
+                                        <a class="dropdown-item" href="/api_test">API Testing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            {% endblock %}
+        </div>
+
+        <div class="container-fluid">
+            {% block body %}
+            
+            {% endblock %}
+        </div>
+
+        <div class="container-fluid">
+            {% block footer %}
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="row">
+                                <div class="col-3 align-center">
+                                    <img class="rounded-circle" alt="images of Services Ontario" src="{{ base_url('/assets/img/trillium_6.jpg') }}" data-holder-rendered="true" />
+                                </div>
+                                <div class="col-9">
+                                    <h1>Government of Ontario</h1>
+                                    <p>The Government of Ontario includes ministries, agencies and Crown corporations.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="inline-list small" aria-label="Secondary navigation" role="navigation" style="padding-left:2rem;">
+                                        <li>
+                                            <a ga-category="Footer Outbound Link" ga-label="about Ontario" href="https://www.ontario.ca/page/about-ontario"> 
+                                                about Ontario
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a ga-category="Footer Outbound Link" ga-label="accessibility" href="https://www.ontario.ca/page/accessibility "> 
+                                                accessibility
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a ga-category="Footer Outbound Link" ga-label="news " href="https://news.ontario.ca/newsroom/en">
+                                                news 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a ga-category="Footer Outbound Link" ga-label="privacy" href="https://www.ontario.ca/page/privacy-statement"> 
+                                                privacy 
+                                            </a>	
+                                        </li>
+                                        <li>		
+                                            <a ga-category="Footer Outbound Link" ga-label="terms of use " href="https://www.ontario.ca/page/terms-use"> 
+                                                terms of use 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <p class="owner-branding" style="padding-left:2rem;"><a href="/page/copyright-information-c-queens-printer-ontario" analytics-on="" analytics-category="Footer" analytics-event="Cabinet Office" analytics-label="copyright" ng-bind-html="::copyright.html">© Queen’s Printer for Ontario, 2012–20</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <ul class="block-list block-list-medium-up">
+                                <li style="padding-bottom: 5px;">
+                                    <a target="_blank" style="font-size: 20px; font-weight: bold" href="https://www.ontario.ca/feedback/contact-us" ga-category="Footer Outbound Link" ga-label="Contact Us">Contact Us</a>
+                                </li>
+                                <li>
+                                    <span class="link" tabindex="0" role="link" data-link="help/en"><span data-i18n="footer.link.infogohelp">INFO-GO Help</span></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            {% endblock %}
+        </div>
+
+        {% block javascripts %}
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        {% endblock %}
+    </body>
+</html>

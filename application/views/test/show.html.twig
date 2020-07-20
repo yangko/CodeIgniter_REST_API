@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{ base_url('/assets/css/style.css') }}" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="{{ base_url('/assets/favicon.ico') }}" />
+{% endblock %}
+
+{% block body %}
+    <h1>{{ pageHeading }}</h1>
+    
+    <p class="lead">Here is a screen shot of my local FireFox Postman working on GET testing.</p>
+
+    <div class="main-content">
+        
+        <img class="img-responsive" alt="" src="{{ photo_url }}/Firefox-Postman.png" border="1">
+
+    </div><!-- ./main-content -->
+{% endblock %}
+
+{% block javascripts %}
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+{% endblock %}

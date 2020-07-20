@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row topimg">
+        <div class="col-12">
+        </div>
+    </div>
+    
+    <h1>{{ pageHeading }}</h1>
+    <p class="lead">Welcome! This's the <strong>Assignment #1</strong></p>
+    <p>It isn't a heavy task, so I choose the efficient, lightweight <strong>CodeIgniter</strong> framework work with. But also integrated <strong><i>Bootstrap</i></strong>, <strong><i>jQuery</i></strong> and <strong><i>twig</i></strong> libraries to easy reproduce the layout of the official site of Government of Ontario for the project view.</p>
+
+    <div class="main-content">
+        <h3>Landing Page</h3>
+        <p>Just guiding to the REST API Testing page.</p>
+        <div class="row space-5">
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="offset-sm-3 col-sm-9">   
+                    <button type="submit" class="btn btn-info" id="btn_test">
+                        <i class="fa fa-sign-in fa-lg"></i> &nbsp;REST API Testing&nbsp;
+                    </button>
+                </div> 
+            <div class="col-sm-6">
+            </div>
+        </div><!-- /.row -->
+        <div class="row space-10">
+        </div>
+    </div><!-- ./main-content -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $( "#btn_test" ).click(function() {
+                location.href = '/test';
+            });
+        });
+    </script>
+{% endblock %}
