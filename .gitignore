@@ -1,6 +1,6 @@
 .DS_Store
 
-system/*
+/system
 
 application/cache/*
 !application/cache/index.html
